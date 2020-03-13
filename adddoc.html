@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+<style>
+    .button {
+        background-color: brown;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <form onsubmit="adddoctor()">
+
+        <table>
+            <h2>Enter Doctor Details</h2>
+            <tr>
+                <td>Enter Doctor ID</td>
+                <td><input type="number" name="docid" id="docId"></td>
+            </tr>
+            <tr>
+                <td>Enter Doctor Name</td>
+                <td><input type="text" name="docname" id="docName"></td>
+            </tr>
+
+            <tr>
+                <td>Enter Specialization ID</td>
+                <td><input type="text" name="splid" list="dataList" id="splId"></td>
+                <td>
+                    <datalist id="dataList">
+                       
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Consulting Fee</td>
+                <td><input type="number" name="fee" placeholder="consulting fee" id="conFee"></td>
+
+        </table>
+        <button type="submit" name="submit" class="button">submit</button>
+        <a href="index.html" class="button">Main Menu</a>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="addoc.js"></script>
+
+</body>
+
+</html>

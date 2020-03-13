@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<style>
+.buttons {
+	background-color: brown;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+</style>
+<body>
+    <div id = "container"><br/>
+        		<table border="1">
+			<thead>
+				<tr>
+					<th>DOCTOR ID</th>
+					<th>DOCTOR NAME</th>
+					<th>SPECIALIZATION ID</th>
+					<th>CONSULTING FEE</th>
+                </tr>
+            </thead>
+            <tbody id="doctable"></tbody>
+		</table>
+	</div>
+
+        <script src= "Viewdoctor.js"></script>
+        <script>
+            Viewdoctor();
+        </script>
+</body>
+
+</html>
